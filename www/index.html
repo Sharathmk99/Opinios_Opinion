@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="ionic/css/ionic.min.css">
+        <title>Blank App Designer Cordova Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
+  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
+  * For a quick overview of "meta viewport" and @viewport, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
+  * Additional useful references include:
+  *   http://www.quirksmode.org/mobile/viewports.html
+  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
+  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+-->
+
+        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+
+        <!-- Recommended location for your JavaScript libraries -->
+        <!-- These library references (below) are just examples to give you the general idea... -->
+        <!-- <script src="lib/mc/hammer.js"></script> -->
+        <!-- <script src="lib/ft/fastclick.js"></script> -->
+
+        <!--
+  * cordova.js is a phantom lib for "Cordova HTML5 web app," it does nothing in a "Standard HTML5 web app"
+  * Seeing a "Failed to load resource: net::ERR_FILE_NOT_FOUND" message caused by this "cordova.js" script?
+  * The cordova.js script is required if you convert your "Standard HTML5" project into a "Cordova" project.
+  * You can safely ignore the error or comment out this line if you will not be developing a Cordova app.
+-->
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="marginal/marginal-position.js"></script>
+        <script type="application/javascript" src="ionic/js/ionic.bundle.js"></script>
+        <script type="application/javascript" src="js/index_init_services.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/ionic_subpage.js"></script>
+        <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+    </head>
+
+    <body ng-app="myApp" ng-controller="MainCtrl">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+        <div class="upage" id="mainpage">
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col left" id="page_22_28">
+                    <label class="item item-input widget uib_w_2 d-margins b-margin" data-uib="ionic/input" data-ver="0"><span class="input-label">Username</span>
+                        <i class="icon placeholder-icon ion-android-contact ion"></i>
+                        <input type="text" placeholder="       eg.Manoj">
+                    </label>
+                    <label class="item item-input widget uib_w_3 d-margins" data-uib="ionic/input" data-ver="0"><span class="input-label">Password</span>
+                        <i class="icon placeholder-icon ion-ios7-locked ion"></i>
+                        <input type="password" placeholder="         *********">
+                    </label>
+                    <button class="button widget uib_w_4 d-margins button-stable" data-uib="ionic/button" data-ver="0">Login</button>
+                </div>
+                <ion-header-bar class="bar inner-element uib_w_1 bar-royal bar-header" data-uib="ionic/header" data-ver="0" align-title="center">
+                    <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
+                    <h1 class="title">Opinios's Opinion</h1>
+                    <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
+                </ion-header-bar>
+
+            </div>
+        </div>
+        <div class="upage hidden" id="homepage">
+            <div class="upage-outer">
+                <div class="upage-content ac0 wrapping-col left" id="page_50_46">
+                    <div class="upage-outer">
+
+                        <div class="card">
+                            <div class="item item-divider">
+                                Recommended Offers
+                            </div>
+                            <div class="list card" ng-repeat="offers in recommendationList">
+                                <div class="item item-avatar">
+                                    <img ng-src="img/{{offers.icon}}">
+                                    <h2>{{offers.provider}}</h2>
+                                    <p>{{offers.timestamp}}</p>
+                                </div>
+
+                                <div class="item item-body">
+                                    <p>
+                                        {{offers.message}}
+                                    </p>
+                                    <p>
+                                        <div>
+                    <span class="subdued" style="float:left;">Bogo: {{offers.bogo}}</span>
+                    <span class="subdued" style="float:right;" >Home Delivery: {{offers.homedelivery}}</span>
+                </div>
+                <div>
+                    <span  style="float:left;">Category: {{offers.category}}</span>
+                    <span  style="float:right;">Discount: {{offers.discount}}</span>
+                </div>
+                                    </p>
+                                </div>
+
+                            </div>
+                        
+                        </div>
+
+                        <div class="card">
+                            <div class="item item-divider">
+                                Latest Offers
+                            </div>
+
+                            <div class="list card" ng-repeat="offers in dbOfferData">
+                                <div class="item item-avatar">
+                                    <img ng-src="img/{{offers.icon}}">
+                                    <h2>{{offers.provider}}</h2>
+                                    <p>{{offers.timestamp}}</p>
+                                </div>
+
+                                <div class="item item-body">
+                                    <p>
+                                        {{offers.message}}
+                                    </p>
+                                    <p>
+                                        <div>
+                    <span class="subdued" style="float:left;">Bogo: {{offers.bogo}}</span>
+                    <span class="subdued" style="float:right;" >Home Delivery: {{offers.homedelivery}}</span>
+                </div>
+                <div>
+                    <span  style="float:left;">Category: {{offers.category}}</span>
+                    <span  style="float:right;">Discount: {{offers.discount}}</span>
+                </div>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bar bar-header bar-royal">
+                    <h1 class="title">Opinios's Opinion</h1>
+                    <button class="button widget uib_w5 d-marginsicon ion button-large button-royal ion-gear-a icon-only" data-uib="ionic/button" data-ver="0"></button>
+                </div>
+            </div>
+        </div>
+        <div class="upage vertical-col left hidden" id="custompage">
+            
+            <div class="upage-outer" style="width:100%" style="width:100%">
+                <div class="upage-content ac0 wrapping-col left" id="page_50_46" style="width:100%">
+                    <div class="upage-outer" style="width:100%">
+
+                        
+            <div class="list card" >
+
+              <div class="item item-avatar" ng-click="foodClick()">
+                <img src="img/food.png">
+                <h2>Food</h2>
+              </div>
+
+              <div class="item item-body" ng-show="foodShow">
+               
+                  
+                <p style="text-align:center">Contextual Search</p>
+                  <ion-checkbox  ng-model="food.lunch" >Lunch</ion-checkbox>
+                  <ion-checkbox ng-model="food.snacks" >Snacks</ion-checkbox>
+                  <ion-checkbox ng-model="food.dinner" >Dinner</ion-checkbox>
+               
+                              <p style="text-align:center">Offers</p>
+  
+                  <ion-checkbox ng-model="food.bogo" >BOGO</ion-checkbox>
+                  <ion-checkbox ng-model="food.homedelivery" >Home Delivery</ion-checkbox>
+            
+                
+                <p style="text-align:center">Discount % : {{food.discount}}% </p>
+                  <div>
+                        <span class="item range" >
+                      <i class="icon ion-minus"></i>
+                      <input ng-model="food.discount" type="range" >
+                      <i class="icon ion-plus"></i>
+
+                    </span>
+                   
+                  
+                  </div>
+
+                
+              </div>
+
+            </div>
+            
+            <div class="list card">
+
+              <div class="item item-avatar" ng-click="groceryClick()">
+                <img src="img/grocery.png">
+                <h2>Grocery</h2>
+              </div>
+               <div class="item item-body" ng-show="groceryShow">
+                  <p style="text-align:center">Offers</p>
+  
+                  <ion-checkbox ng-model="grocery.bogo" >BOGO</ion-checkbox>
+                  <ion-checkbox ng-model="grocery.homedelivery" >Home Delivery</ion-checkbox>
+            
+                
+                <p style="text-align:center">Discount % : {{grocery.discount}}% </p>
+                  <div>
+                    <span class="item range" >
+                      <i class="icon ion-minus"></i>
+                      <input ng-model="grocery.discount" type="range" >
+                      <i class="icon ion-plus"></i>
+
+                    </span>
+                   
+                  
+                  </div>
+                <p style="text-align:center">Vegitables & Fruits</p>
+  
+                  <ion-checkbox ng-model="grocery.tomoto" >Tomoto</ion-checkbox>
+                  <ion-checkbox ng-model="grocery.onion" >Onion</ion-checkbox>
+                <ion-checkbox ng-model="grocery.mango" >Mango</ion-checkbox>
+                </div>
+            </div>
+            
+            <div class="list card">
+
+              <div class="item item-avatar" ng-click="customClick()">
+                <img src="img/custom.png">
+                <h2>Custom</h2>
+              </div>
+
+              <div class="item item-body" ng-show="customShow">
+                  <p style="text-align:center">Input any keyword you would like to be notified</p>
+                <input type="text" placeholder="eg.piza, cakes" ng-model="customText">
+                  
+              </div>
+
+            </div>
+                        <button class="button button-royal" style="width:100%;" ng-click="apply()">Apply</button>
+                        </div>
+                        </div>
+                <div class="bar bar-header bar-royal">
+                    <button class="button icon-left ion-chevron-left button-clear button-calm" ng-click="back()"></button>
+                    <h1 class="title">Opinios's Opinion</h1>
+                    
+                </div>
+                    </div>
+        </div>
+
+    </body>
+
+</html>
