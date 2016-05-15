@@ -1,0 +1,59 @@
+{
+    "cordova-plugin-device": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\sharath_mk\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\cordova-plugin-device"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-splashscreen": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\sharath_mk\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\cordova-plugin-splashscreen"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-statusbar": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\sharath_mk\\AppData\\Local\\Intel\\XDK\\xdk\\components\\server\\cordova-plugins\\cordova-plugin-statusbar"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-sms": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/floatinghotpot/cordova-plugin-sms",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-sqlite-storage": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-sqlite-storage@1.2.1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "de.appplant.cordova.plugin.local-notification": {
+        "source": {
+            "type": "registry",
+            "id": "de.appplant.cordova.plugin.local-notification@0.8.4"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-app-event": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-app-event"
+        },
+        "is_top_level": false,
+        "variables": {}
+    }
+}

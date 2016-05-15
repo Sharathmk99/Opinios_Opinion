@@ -1,0 +1,22 @@
+{
+    "!name": "cordova-plugin-sms",
+    "!define": {
+        "!modules": {
+            "SMS": {
+                "setOptions": "fn(options: ?, successCallback: ?, failureCallback: ?)",
+                "startWatch": "fn(successCallback: ?, failureCallback: ?)",
+                "stopWatch": "fn(successCallback: ?, failureCallback: ?)",
+                "enableIntercept": "fn(on_off: bool, successCallback: ?, failureCallback: ?)",
+                "sendSMS": "fn(address: ?, text: ?, successCallback: ?, failureCallback: ?)",
+                "listSMS": "fn(filter: ?, successCallback: ?, failureCallback: ?)",
+                "deleteSMS": "fn(filter: ?, successCallback: ?, failureCallback: ?)",
+                "restoreSMS": "fn(msg: ?, successCallback: ?, failureCallback: ?)"
+            }
+        },
+        "!modules.SMS.restoreSMS.!0": "[?]"
+    },
+    "!plugin-version": "1.0.5",
+    "window": {
+        "SMS": "!modules.SMS"
+    }
+}

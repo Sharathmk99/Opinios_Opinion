@@ -1,0 +1,31 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "cordova-plugin-sms": {
+            "PACKAGE_NAME": "HelloCordova"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "HelloCordova"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-app-event": {
+            "PACKAGE_NAME": "HelloCordova"
+        }
+    }
+}
